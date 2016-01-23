@@ -5,7 +5,7 @@ var Server = mongo.Server,
     BSON = mongo.BSONPure;
 
     //{'_id':new BSON.ObjectID(id)} deprecated 
-    // use {'_id':new require('mongodb').ObjectID(id)}
+    // alternative use {'_id':new require('mongodb').ObjectID(id)}
 
 var server = new Server('localhost', 27017, {auto_reconnect: true});
 db = new Db('winedb', server);
